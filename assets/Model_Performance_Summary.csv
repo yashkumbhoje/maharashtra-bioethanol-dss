@@ -1,0 +1,5 @@
+Target Variable,Decoupled ML Baseline R²,Cascaded Physics Pipeline R²,Pooled RMSE,Physical / Algorithmic Guarantee
+Season Cane Crushed (MT),0.739 (Standalone GBDT),0.7899,"164,501.57 MT",Poisson Objective for Skewed Non-Negative Throughput
+Total Bagasse Production (MT),0.712 (Standalone GBDT),0.7899,"46,060.44 MT",100% Deterministic Mass Conservation (0.28 Multiplier)
+Surplus Bagasse for 2G Ethanol (MT),Not Modeled (Unconstrained),0.7899,"3,684.84 MT",Calibrated 8% Net Surplus Allocation (0.0224 × Cane)
+Season Sugar Production (Qtl),Not Modeled (Cane Only),0.7624,"181,256.52 Qtl",Bounded Sucrose Yield [7.5% – 13.5%] Chemical Coupling
