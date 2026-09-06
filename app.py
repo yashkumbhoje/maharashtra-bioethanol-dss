@@ -20,9 +20,10 @@ ASSET_DIR = "assets"
 @st.cache_data
 def load_data():
     data = {}
+    # UPDATED to point to the new 5-Objective files
     files = {
-        "dispatch": "Optimal_Bagasse_Dispatch_Schedule.csv",
-        "pareto": "Pareto_Frontier_Scenarios.csv",
+        "dispatch": "Optimal_5_Objective_Dispatch_Schedule.xlsx", 
+        "pareto": "Pareto_5_Objective_Scenarios.csv",
         "audit": "Regional_Plant_Audit_Kolhapur_Sangli.csv",
         "summary": "Model_Performance_Summary.csv",
         "predictions": "Pooled_Holdout_Predictions.csv"
@@ -30,7 +31,10 @@ def load_data():
     for key, filename in files.items():
         path = os.path.join(ASSET_DIR, filename)
         if os.path.exists(path):
-            data[key] = pd.read_csv(path)
+            if filename.endswith(".xlsx"):
+                data[key] = pd.read_excel(path)
+            else:
+                data[key] = pd.read_csv(path)
         else:
             data[key] = pd.DataFrame()
     return data
@@ -43,7 +47,7 @@ df_dispatch, df_pareto, df_audit, df_summary, df_predictions = data["dispatch"],
 # ---------------------------------------------------------
 st.sidebar.image("https://img.icons8.com/color/96/biofuel.png", width=70)
 st.sidebar.title("Bio-Ethanol DSS")
-st.sidebar.markdown("**State-Wide Industrial Decision Support System**  \n*Physics-Informed ML & Multi-Objective Spatial Optimization*")
+st.sidebar.markdown("**State-Wide Industrial Decision Support System**  \n*Physics-Informed ML & 5-Objective Spatial Optimization*")
 st.sidebar.divider()
 
 navigation = st.sidebar.radio(
@@ -86,8 +90,8 @@ if navigation == "🏛️ Executive Dashboard":
     st.markdown("""
     * **Physics Layer 1 (Cane Crushing):** HistGradientBoosting with Poisson loss objective capturing non-negative, right-skewed throughput.
     * **Physics Layer 2 (Sucrose Yield):** L1-regularized chemical recovery regression agronomically bounded to [7.5%, 13.5%].
-    * **Deterministic Mass-Balance:** 100% mass conservation multiplier (0.280000) generating downstream metrics without variance drift.
-    * **Spatial Logistics Layer:** PuLP mixed-integer optimization minimizing haul distance across 63 distilleries subject to 100 km economic radii.
+    * **Deterministic Mass-Balance:** 100% mass conservation multiplier (0.28) generating downstream metrics without variance drift.
+    * **5-Objective Spatial Logistics Layer:** PuLP mixed-integer optimization minimizing Ton-Kilometers to simultaneously optimize for **Cost, CO₂ Emissions, Distance, and Fleet Time**.
     """)
 
 # ---------------------------------------------------------
@@ -106,8 +110,6 @@ elif navigation == "🔬 ML Model Diagnostics & XAI":
     img_path = os.path.join(ASSET_DIR, img_map[diag_view])
     if os.path.exists(img_path):
         st.image(Image.open(img_path), use_container_width=True)
-    else:
-        st.warning(f"Image not found at {img_path}")
 
     st.divider()
     st.subheader("📋 Mill-Level Holdout Validation Table")
@@ -118,18 +120,19 @@ elif navigation == "🔬 ML Model Diagnostics & XAI":
 # TAB 3: GEOSPATIAL NETWORK EXPLORER
 # ---------------------------------------------------------
 elif navigation == "🗺️ Geospatial Network Explorer":
-    st.title("🗺️ Geospatial Supply Chain & Network Topology")
+    st.title("🗺️ 5-Objective Geospatial Supply Chain")
     map_choice = st.radio("Select Network Scope:", ["State-Wide (All 63 Ethanol Plants)", "Regional Cluster (Kolhapur & Sangli Catchment)"], horizontal=True)
 
+    # UPDATED to point to the new OSM Map files
     if map_choice == "State-Wide (All 63 Ethanol Plants)":
-        map_path = os.path.join(ASSET_DIR, "All_Ethanol_Plants_Supply_Network.html")
+        map_path = os.path.join(ASSET_DIR, "OpenStreetMap_5_Objective_Supply_Network.html")
         if os.path.exists(map_path):
             with open(map_path, 'r', encoding='utf-8') as f:
                 components.html(f.read(), height=650, scrolling=True)
     else:
         col_map, col_stat = st.columns([1.2, 0.8])
         with col_map:
-            map_path = os.path.join(ASSET_DIR, "Kolhapur_Sangli_Ethanol_Supply_Network.html")
+            map_path = os.path.join(ASSET_DIR, "Kolhapur_Sangli_5_Objective_Supply_Network.html")
             if os.path.exists(map_path):
                 with open(map_path, 'r', encoding='utf-8') as f:
                     components.html(f.read(), height=600, scrolling=True)
@@ -148,9 +151,15 @@ elif navigation == "🗺️ Geospatial Network Explorer":
 # TAB 4: DISPATCH & LOGISTICS MATRIX
 # ---------------------------------------------------------
 elif navigation == "🚚 Dispatch & Logistics Matrix":
-    st.title("🚚 Optimized Biomass Dispatch & Pareto Frontier")
+    st.title("🚚 5-Objective Optimized Biomass Dispatch")
+    
+    # Display the new Pareto Chart
+    pareto_img_path = os.path.join(ASSET_DIR, "5_Objective_Pareto_Frontier.png")
+    if os.path.exists(pareto_img_path):
+        st.image(Image.open(pareto_img_path), caption="Multi-Objective Trade-Off (Cost/Distance vs CO2 Emissions)", use_container_width=True)
+
     if not df_pareto.empty:
-        st.subheader("⚡ Pareto Optimal Trade-Off Scenarios (Volume vs. Haul Distance)")
+        st.subheader("⚡ Pareto Optimal Trade-Off Scenarios")
         st.dataframe(df_pareto, use_container_width=True, hide_index=True)
 
     st.divider()
@@ -169,13 +178,15 @@ elif navigation == "🚚 Dispatch & Logistics Matrix":
         if selected_plant != "All Plants":
             df_filtered = df_filtered[df_filtered["Ethanol Plant Destination"] == selected_plant]
 
-        col_m1, col_m2, col_m3 = st.columns(3)
+        # UPDATED METRICS to match new 5-objective column names
+        col_m1, col_m2, col_m3, col_m4 = st.columns(4)
         col_m1.metric("Active Routes", len(df_filtered))
-        col_m2.metric("Total Bagasse Allocated", f"{df_filtered['Bagasse Allocated (MT)'].sum():,.2f} MT")
-        col_m3.metric("Total Logistical Work", f"{df_filtered['Ton-Kilometers'].sum():,.0f} Ton-KM")
+        col_m2.metric("Allocated Bagasse", f"{df_filtered['1. Bagasse Allocated (MT)'].sum():,.0f} MT")
+        col_m3.metric("Total Cost", f"₹ {df_filtered['2. Route Cost (INR)'].sum():,.0f}")
+        col_m4.metric("CO₂ Emissions", f"{df_filtered['3. CO₂ Emissions (kg)'].sum():,.0f} kg")
 
         st.dataframe(df_filtered.reset_index(drop=True), use_container_width=True)
-        st.download_button("📥 Download Filtered Dispatch Schedule (CSV)", df_filtered.to_csv(index=False).encode('utf-8'), "Selected_Bagasse_Dispatch_Schedule.csv", "text/csv")
+        st.download_button("📥 Download Filtered Dispatch Schedule (CSV)", df_filtered.to_csv(index=False).encode('utf-8'), "5_Objective_Dispatch_Schedule.csv", "text/csv")
 
 # ---------------------------------------------------------
 # TAB 5: WHAT-IF SIMULATOR
