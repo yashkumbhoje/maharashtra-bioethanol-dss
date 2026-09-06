@@ -1,0 +1,1710 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d300ed8a8153d3d5ce84f6fe128d01f0 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_d300ed8a8153d3d5ce84f6fe128d01f0" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_d300ed8a8153d3d5ce84f6fe128d01f0 = L.map(
+                "map_d300ed8a8153d3d5ce84f6fe128d01f0",
+                {
+                    center: [16.770000000000003, 74.35571428571428],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 9,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_39e2eb8f0c5d81d05f25c9c6fcf8dc47 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_39e2eb8f0c5d81d05f25c9c6fcf8dc47.addTo(map_d300ed8a8153d3d5ce84f6fe128d01f0);
+        
+    
+            var marker_bc2d93559c5e7c4850b351d9ef685e36 = L.marker(
+                [16.7, 74.24],
+                {
+}
+            ).addTo(map_d300ed8a8153d3d5ce84f6fe128d01f0);
+        
+    
+            var icon_ee20e8293dfb42de5f6ea56d405b5059 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "industry",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ced0958e2263232bdb423cb783db1b90 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_443a9dd031c86d536e73f9e729484a46 = $(`<div id="html_443a9dd031c86d536e73f9e729484a46" style="width: 100.0%; height: 100.0%;">     <div style='font-family: sans-serif; font-size: 12px; width: 260px;'>         <h4 style='color: #B91C1C; margin: 0 0 5px 0;'>Ethanol Plant Destination</h4>         <b>Name:</b> Karan Sugars Pvt. Ltd.<br>         <b>Location:</b> Kolhapur<br>         <b>Capacity:</b> 20 KLPD<br>         <b>Demand:</b> 30,000 MT<br>         <b>Total Received:</b> 30,000.0 MT (100.0% met)     </div>     </div>`)[0];
+                popup_ced0958e2263232bdb423cb783db1b90.setContent(html_443a9dd031c86d536e73f9e729484a46);
+            
+        
+
+        marker_bc2d93559c5e7c4850b351d9ef685e36.bindPopup(popup_ced0958e2263232bdb423cb783db1b90)
+        ;
+
+        
+    
+    
+                marker_bc2d93559c5e7c4850b351d9ef685e36.setIcon(icon_ee20e8293dfb42de5f6ea56d405b5059);
+            
+    
+            var marker_d6077021f74530bfa1e922094bed352a = L.marker(
+                [16.93, 74.42],
+                {
+}
+            ).addTo(map_d300ed8a8153d3d5ce84f6fe128d01f0);
+        
+    
+            var icon_6553706cdaeaf3f688c8f4684da6fffa = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "industry",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_68dca42576a2ea6333af290f0348de74 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1535c213138646ca88df188100712a48 = $(`<div id="html_1535c213138646ca88df188100712a48" style="width: 100.0%; height: 100.0%;">     <div style='font-family: sans-serif; font-size: 12px; width: 260px;'>         <h4 style='color: #B91C1C; margin: 0 0 5px 0;'>Ethanol Plant Destination</h4>         <b>Name:</b> Rajarambapu Patil SSK Ltd.<br>         <b>Location:</b> Rajaramnagar, Sakharle, Walwa, Sangli<br>         <b>Capacity:</b> 20 KLPD<br>         <b>Demand:</b> 30,000 MT<br>         <b>Total Received:</b> 30,000.0 MT (100.0% met)     </div>     </div>`)[0];
+                popup_68dca42576a2ea6333af290f0348de74.setContent(html_1535c213138646ca88df188100712a48);
+            
+        
+
+        marker_d6077021f74530bfa1e922094bed352a.bindPopup(popup_68dca42576a2ea6333af290f0348de74)
+        ;
+
+        
+    
+    
+                marker_d6077021f74530bfa1e922094bed352a.setIcon(icon_6553706cdaeaf3f688c8f4684da6fffa);
+            
+    
+            var marker_19ffb4b3f4b6bd2b4507470dda7465cf = L.marker(
+                [16.58, 74.31],
+                {
+}
+            ).addTo(map_d300ed8a8153d3d5ce84f6fe128d01f0);
+        
+    
+            var icon_9d0c4cf6e496acbff708d2b2de93921e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "industry",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e443867c6077e412509992b2f4d4f5c8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6c162bfd287606d42f54eb8be08a6ead = $(`<div id="html_6c162bfd287606d42f54eb8be08a6ead" style="width: 100.0%; height: 100.0%;">     <div style='font-family: sans-serif; font-size: 12px; width: 260px;'>         <h4 style='color: #B91C1C; margin: 0 0 5px 0;'>Ethanol Plant Destination</h4>         <b>Name:</b> Sadashivrao Mandalik Kagal SSK Ltd.<br>         <b>Location:</b> Sadashivnagar, Hamidwada, Kaulage, Kolhapur<br>         <b>Capacity:</b> 30 KLPD<br>         <b>Demand:</b> 45,000 MT<br>         <b>Total Received:</b> 45,000.0 MT (100.0% met)     </div>     </div>`)[0];
+                popup_e443867c6077e412509992b2f4d4f5c8.setContent(html_6c162bfd287606d42f54eb8be08a6ead);
+            
+        
+
+        marker_19ffb4b3f4b6bd2b4507470dda7465cf.bindPopup(popup_e443867c6077e412509992b2f4d4f5c8)
+        ;
+
+        
+    
+    
+                marker_19ffb4b3f4b6bd2b4507470dda7465cf.setIcon(icon_9d0c4cf6e496acbff708d2b2de93921e);
+            
+    
+            var marker_7756bb2abfad949ccf52312bca6c6964 = L.marker(
+                [16.73, 74.57],
+                {
+}
+            ).addTo(map_d300ed8a8153d3d5ce84f6fe128d01f0);
+        
+    
+            var icon_ebbc7e485030d649a7d2ba7e21f9ac11 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "industry",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a5974d212743c5ec30aefca17829c69d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5717435f6cbff6bab67cc68687ba3454 = $(`<div id="html_5717435f6cbff6bab67cc68687ba3454" style="width: 100.0%; height: 100.0%;">     <div style='font-family: sans-serif; font-size: 12px; width: 260px;'>         <h4 style='color: #B91C1C; margin: 0 0 5px 0;'>Ethanol Plant Destination</h4>         <b>Name:</b> Shree Datta Shetkari SSK Ltd.<br>         <b>Location:</b> Shirol, Kolhapur<br>         <b>Capacity:</b> 30 KLPD<br>         <b>Demand:</b> 45,000 MT<br>         <b>Total Received:</b> 45,000.0 MT (100.0% met)     </div>     </div>`)[0];
+                popup_a5974d212743c5ec30aefca17829c69d.setContent(html_5717435f6cbff6bab67cc68687ba3454);
+            
+        
+
+        marker_7756bb2abfad949ccf52312bca6c6964.bindPopup(popup_a5974d212743c5ec30aefca17829c69d)
+        ;
+
+        
+    
+    
+                marker_7756bb2abfad949ccf52312bca6c6964.setIcon(icon_ebbc7e485030d649a7d2ba7e21f9ac11);
+            
+    
+            var marker_0a83e4ef1f6bac731beef4a1be8edf26 = L.marker(
+                [16.9, 74.13],
+                {
+}
+            ).addTo(map_d300ed8a8153d3d5ce84f6fe128d01f0);
+        
+    
+            var icon_fc2805b9f2e002244b0a436562ff554b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "industry",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_994a659c26cbc395de055e01e9d3bd68 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3b0abbb87c176d5eb7bd8d1764152457 = $(`<div id="html_3b0abbb87c176d5eb7bd8d1764152457" style="width: 100.0%; height: 100.0%;">     <div style='font-family: sans-serif; font-size: 12px; width: 260px;'>         <h4 style='color: #B91C1C; margin: 0 0 5px 0;'>Ethanol Plant Destination</h4>         <b>Name:</b> Shree Tatyasaheb Kore Warana SSK Ltd.<br>         <b>Location:</b> Warananagar, Panhala, Kolhapur<br>         <b>Capacity:</b> 30 KLPD<br>         <b>Demand:</b> 45,000 MT<br>         <b>Total Received:</b> 45,000.0 MT (100.0% met)     </div>     </div>`)[0];
+                popup_994a659c26cbc395de055e01e9d3bd68.setContent(html_3b0abbb87c176d5eb7bd8d1764152457);
+            
+        
+
+        marker_0a83e4ef1f6bac731beef4a1be8edf26.bindPopup(popup_994a659c26cbc395de055e01e9d3bd68)
+        ;
+
+        
+    
+    
+                marker_0a83e4ef1f6bac731beef4a1be8edf26.setIcon(icon_fc2805b9f2e002244b0a436562ff554b);
+            
+    
+            var marker_51a50812f0de1187ca9346e1df6467a4 = L.marker(
+                [16.7, 74.24],
+                {
+}
+            ).addTo(map_d300ed8a8153d3d5ce84f6fe128d01f0);
+        
+    
+            var icon_241d9bf834070a35ffb0d2e4c46f3996 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "industry",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_735a9f5c47c5e908a48ca8e1111aca6c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_390b3373fc6c4dbb854c0368010e19c0 = $(`<div id="html_390b3373fc6c4dbb854c0368010e19c0" style="width: 100.0%; height: 100.0%;">     <div style='font-family: sans-serif; font-size: 12px; width: 260px;'>         <h4 style='color: #B91C1C; margin: 0 0 5px 0;'>Ethanol Plant Destination</h4>         <b>Name:</b> Shri Chhatrapati Rajaram SSK Ltd.<br>         <b>Location:</b> Kasaba Bavada, Kolhapur<br>         <b>Capacity:</b> 30 KLPD<br>         <b>Demand:</b> 45,000 MT<br>         <b>Total Received:</b> 45,000.0 MT (100.0% met)     </div>     </div>`)[0];
+                popup_735a9f5c47c5e908a48ca8e1111aca6c.setContent(html_390b3373fc6c4dbb854c0368010e19c0);
+            
+        
+
+        marker_51a50812f0de1187ca9346e1df6467a4.bindPopup(popup_735a9f5c47c5e908a48ca8e1111aca6c)
+        ;
+
+        
+    
+    
+                marker_51a50812f0de1187ca9346e1df6467a4.setIcon(icon_241d9bf834070a35ffb0d2e4c46f3996);
+            
+    
+            var marker_a03d8edabc277019fc2f3bb8aed4b36b = L.marker(
+                [16.85, 74.58],
+                {
+}
+            ).addTo(map_d300ed8a8153d3d5ce84f6fe128d01f0);
+        
+    
+            var icon_324f2b1e1fe333ed9ed151f706f020d3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "industry",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_55cdafefa1bf1f70302cf4c1979514a6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d1f19e92b3850dde5615865d446debde = $(`<div id="html_d1f19e92b3850dde5615865d446debde" style="width: 100.0%; height: 100.0%;">     <div style='font-family: sans-serif; font-size: 12px; width: 260px;'>         <h4 style='color: #B91C1C; margin: 0 0 5px 0;'>Ethanol Plant Destination</h4>         <b>Name:</b> Vasantdada SSK Ltd.<br>         <b>Location:</b> Sangli<br>         <b>Capacity:</b> 45 KLPD<br>         <b>Demand:</b> 67,500 MT<br>         <b>Total Received:</b> 67,500.0 MT (100.0% met)     </div>     </div>`)[0];
+                popup_55cdafefa1bf1f70302cf4c1979514a6.setContent(html_d1f19e92b3850dde5615865d446debde);
+            
+        
+
+        marker_a03d8edabc277019fc2f3bb8aed4b36b.bindPopup(popup_55cdafefa1bf1f70302cf4c1979514a6)
+        ;
+
+        
+    
+    
+                marker_a03d8edabc277019fc2f3bb8aed4b36b.setIcon(icon_324f2b1e1fe333ed9ed151f706f020d3);
+            
+    
+            var circle_marker_b3e959c23309c0c70b52fecb180a9f11 = L.circleMarker(
+                [16.101127, 74.124312],
+                {"bubblingMouseEvents": true, "color": "#1E3F66", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2E5B88", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_d300ed8a8153d3d5ce84f6fe128d01f0);
+        
+    
+        var popup_ff99708c93e260bb1584fd7818f93c3a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_56608bca5b66e868b4b0345f792daa89 = $(`<div id="html_56608bca5b66e868b4b0345f792daa89" style="width: 100.0%; height: 100.0%;"><b>Sugar Mill:</b> Ajara Shetkari Sahakari Sakhar Karkhana Ltd.<br><b>District:</b> Kolhapur</div>`)[0];
+                popup_ff99708c93e260bb1584fd7818f93c3a.setContent(html_56608bca5b66e868b4b0345f792daa89);
+            
+        
+
+        circle_marker_b3e959c23309c0c70b52fecb180a9f11.bindPopup(popup_ff99708c93e260bb1584fd7818f93c3a)
+        ;
+
+        
+    
+    
+            var circle_marker_3b200704d5a48ffa536d3eae8e2b6129 = L.circleMarker(
+                [16.167039, 74.341211],
+                {"bubblingMouseEvents": true, "color": "#1E3F66", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2E5B88", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_d300ed8a8153d3d5ce84f6fe128d01f0);
+        
+    
+        var popup_5d94ee651d502a0b040a853ce66cf1c4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_52fc7a54afbb6b86b09f5f57b09ee423 = $(`<div id="html_52fc7a54afbb6b86b09f5f57b09ee423" style="width: 100.0%; height: 100.0%;"><b>Sugar Mill:</b> Appasaheb Nalawade Gadhinglaj Taluka SSK Ltd.<br><b>District:</b> Kolhapur</div>`)[0];
+                popup_5d94ee651d502a0b040a853ce66cf1c4.setContent(html_52fc7a54afbb6b86b09f5f57b09ee423);
+            
+        
+
+        circle_marker_3b200704d5a48ffa536d3eae8e2b6129.bindPopup(popup_5d94ee651d502a0b040a853ce66cf1c4)
+        ;
+
+        
+    
+    
+            var circle_marker_918dbd86746a0947feed2d56d6f7590f = L.circleMarker(
+                [16.535417, 74.113621],
+                {"bubblingMouseEvents": true, "color": "#1E3F66", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2E5B88", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_d300ed8a8153d3d5ce84f6fe128d01f0);
+        
+    
+        var popup_f9df572b56fd4aa2fef12d5fb4e06857 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c8bf40430458a022acf168d87b560235 = $(`<div id="html_c8bf40430458a022acf168d87b560235" style="width: 100.0%; height: 100.0%;"><b>Sugar Mill:</b> Shree Bhogawati Sahakari Sakhar Karkhana Ltd.<br><b>District:</b> Kolhapur</div>`)[0];
+                popup_f9df572b56fd4aa2fef12d5fb4e06857.setContent(html_c8bf40430458a022acf168d87b560235);
+            
+        
+
+        circle_marker_918dbd86746a0947feed2d56d6f7590f.bindPopup(popup_f9df572b56fd4aa2fef12d5fb4e06857)
+        ;
+
+        
+    
+    
+            var circle_marker_374b842b4c8bff8dc9a63725143b35bc = L.circleMarker(
+                [16.587863, 74.299359],
+                {"bubblingMouseEvents": true, "color": "#1E3F66", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2E5B88", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_d300ed8a8153d3d5ce84f6fe128d01f0);
+        
+    
+        var popup_471abef9af19d378709904b148bdf274 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f80bf81f1fef13c75b2e289ff60706a7 = $(`<div id="html_f80bf81f1fef13c75b2e289ff60706a7" style="width: 100.0%; height: 100.0%;"><b>Sugar Mill:</b> Shree Chhatrapati Shahu S.S.K. Ltd.<br><b>District:</b> Kolhapur</div>`)[0];
+                popup_471abef9af19d378709904b148bdf274.setContent(html_f80bf81f1fef13c75b2e289ff60706a7);
+            
+        
+
+        circle_marker_374b842b4c8bff8dc9a63725143b35bc.bindPopup(popup_471abef9af19d378709904b148bdf274)
+        ;
+
+        
+    
+    
+            var circle_marker_99655b46c59d6a21a12ccceba9e1c32d = L.circleMarker(
+                [16.749613, 74.243609],
+                {"bubblingMouseEvents": true, "color": "#1E3F66", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2E5B88", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_d300ed8a8153d3d5ce84f6fe128d01f0);
+        
+    
+        var popup_ac94c0657187b8a6fdae58a46e64b471 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0a858cbc466a0129c809d746ec93ce35 = $(`<div id="html_0a858cbc466a0129c809d746ec93ce35" style="width: 100.0%; height: 100.0%;"><b>Sugar Mill:</b> Shri Chhatrapati Rajaram Sahakari Sakhar Karkhana Ltd.<br><b>District:</b> Kolhapur</div>`)[0];
+                popup_ac94c0657187b8a6fdae58a46e64b471.setContent(html_0a858cbc466a0129c809d746ec93ce35);
+            
+        
+
+        circle_marker_99655b46c59d6a21a12ccceba9e1c32d.bindPopup(popup_ac94c0657187b8a6fdae58a46e64b471)
+        ;
+
+        
+    
+    
+            var circle_marker_af36f0937d246b3c90ddfbdc69444574 = L.circleMarker(
+                [16.751179, 74.588812],
+                {"bubblingMouseEvents": true, "color": "#1E3F66", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2E5B88", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_d300ed8a8153d3d5ce84f6fe128d01f0);
+        
+    
+        var popup_17047777bddcba18a58482e072de77ef = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_33cd2341509bbca4ac8d00ce0136c524 = $(`<div id="html_33cd2341509bbca4ac8d00ce0136c524" style="width: 100.0%; height: 100.0%;"><b>Sugar Mill:</b> Shree Datta Shetkari S.S.K. Ltd.<br><b>District:</b> Kolhapur</div>`)[0];
+                popup_17047777bddcba18a58482e072de77ef.setContent(html_33cd2341509bbca4ac8d00ce0136c524);
+            
+        
+
+        circle_marker_af36f0937d246b3c90ddfbdc69444574.bindPopup(popup_17047777bddcba18a58482e072de77ef)
+        ;
+
+        
+    
+    
+            var circle_marker_9c6cf2c225c2530d1cc5aeeb2d56f062 = L.circleMarker(
+                [16.766822, 74.135603],
+                {"bubblingMouseEvents": true, "color": "#1E3F66", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2E5B88", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_d300ed8a8153d3d5ce84f6fe128d01f0);
+        
+    
+        var popup_c2e6ab6e9fb90b92a15f338ab97fd1c6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1901346382eab98df512e7d427a01d21 = $(`<div id="html_1901346382eab98df512e7d427a01d21" style="width: 100.0%; height: 100.0%;"><b>Sugar Mill:</b> Shree Datta Sakhar Karkhana / Dalmia Bharat Sugar & Industries Ltd.<br><b>District:</b> Kolhapur</div>`)[0];
+                popup_c2e6ab6e9fb90b92a15f338ab97fd1c6.setContent(html_1901346382eab98df512e7d427a01d21);
+            
+        
+
+        circle_marker_9c6cf2c225c2530d1cc5aeeb2d56f062.bindPopup(popup_c2e6ab6e9fb90b92a15f338ab97fd1c6)
+        ;
+
+        
+    
+    
+            var circle_marker_b14a0a2109cc1de0658e9839cded922f = L.circleMarker(
+                [16.71292, 74.44332],
+                {"bubblingMouseEvents": true, "color": "#1E3F66", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2E5B88", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_d300ed8a8153d3d5ce84f6fe128d01f0);
+        
+    
+        var popup_b7bb986243ec0a7060121362ddbf1ea1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d8f756db1eb559ea65cc9b5ae15e18ae = $(`<div id="html_d8f756db1eb559ea65cc9b5ae15e18ae" style="width: 100.0%; height: 100.0%;"><b>Sugar Mill:</b> Deshbhakta Ratnappa Kumbhar Panchganga S.S.K. Ltd.<br><b>District:</b> Kolhapur</div>`)[0];
+                popup_b7bb986243ec0a7060121362ddbf1ea1.setContent(html_d8f756db1eb559ea65cc9b5ae15e18ae);
+            
+        
+
+        circle_marker_b14a0a2109cc1de0658e9839cded922f.bindPopup(popup_b7bb986243ec0a7060121362ddbf1ea1)
+        ;
+
+        
+    
+    
+            var circle_marker_8ac707c1b3a9d9037c59d17801c72356 = L.circleMarker(
+                [16.42629, 74.141511],
+                {"bubblingMouseEvents": true, "color": "#1E3F66", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2E5B88", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_d300ed8a8153d3d5ce84f6fe128d01f0);
+        
+    
+        var popup_6a084e0f099fb8d29aae34c41b6b5962 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d6eadc6d74815a5daf9f43940c59c287 = $(`<div id="html_d6eadc6d74815a5daf9f43940c59c287" style="width: 100.0%; height: 100.0%;"><b>Sugar Mill:</b> Shree Dudhganga Vedganga S.S.K. Ltd.<br><b>District:</b> Kolhapur</div>`)[0];
+                popup_6a084e0f099fb8d29aae34c41b6b5962.setContent(html_d6eadc6d74815a5daf9f43940c59c287);
+            
+        
+
+        circle_marker_8ac707c1b3a9d9037c59d17801c72356.bindPopup(popup_6a084e0f099fb8d29aae34c41b6b5962)
+        ;
+
+        
+    
+    
+            var circle_marker_4e13c78150dac6cfb7316b6184f407fb = L.circleMarker(
+                [16.620972, 74.594306],
+                {"bubblingMouseEvents": true, "color": "#1E3F66", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2E5B88", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_d300ed8a8153d3d5ce84f6fe128d01f0);
+        
+    
+        var popup_58116731f1676fd03fc57166a3932d7a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1a27d28c9345ba777d2af54b2bbf6554 = $(`<div id="html_1a27d28c9345ba777d2af54b2bbf6554" style="width: 100.0%; height: 100.0%;"><b>Sugar Mill:</b> Shri Gurudatt Sugars Ltd.<br><b>District:</b> Kolhapur</div>`)[0];
+                popup_58116731f1676fd03fc57166a3932d7a.setContent(html_1a27d28c9345ba777d2af54b2bbf6554);
+            
+        
+
+        circle_marker_4e13c78150dac6cfb7316b6184f407fb.bindPopup(popup_58116731f1676fd03fc57166a3932d7a)
+        ;
+
+        
+    
+    
+            var circle_marker_82589d3e409ebb008a77af4ec54667a2 = L.circleMarker(
+                [16.0327, 74.4583],
+                {"bubblingMouseEvents": true, "color": "#1E3F66", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2E5B88", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_d300ed8a8153d3d5ce84f6fe128d01f0);
+        
+    
+        var popup_e797a6cffd0a69375f011e829824412c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7296bc8ed354dff9b601f348203195eb = $(`<div id="html_7296bc8ed354dff9b601f348203195eb" style="width: 100.0%; height: 100.0%;"><b>Sugar Mill:</b> Olam Global Agri Commodities India Pvt. Ltd. (Hemarus)<br><b>District:</b> Kolhapur</div>`)[0];
+                popup_e797a6cffd0a69375f011e829824412c.setContent(html_7296bc8ed354dff9b601f348203195eb);
+            
+        
+
+        circle_marker_82589d3e409ebb008a77af4ec54667a2.bindPopup(popup_e797a6cffd0a69375f011e829824412c)
+        ;
+
+        
+    
+    
+            var circle_marker_76dc1368c5d0ae0368dde1f00fe2ae6b = L.circleMarker(
+                [16.174812, 73.972563],
+                {"bubblingMouseEvents": true, "color": "#1E3F66", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2E5B88", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_d300ed8a8153d3d5ce84f6fe128d01f0);
+        
+    
+        var popup_1178bb729abfed5e0d3fd28fcb0cb53d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a5cc18da636fa732d43135b44c1191bd = $(`<div id="html_a5cc18da636fa732d43135b44c1191bd" style="width: 100.0%; height: 100.0%;"><b>Sugar Mill:</b> Athani Sugars Ltd. (Bhudargad Unit-4)<br><b>District:</b> Kolhapur</div>`)[0];
+                popup_1178bb729abfed5e0d3fd28fcb0cb53d.setContent(html_a5cc18da636fa732d43135b44c1191bd);
+            
+        
+
+        circle_marker_76dc1368c5d0ae0368dde1f00fe2ae6b.bindPopup(popup_1178bb729abfed5e0d3fd28fcb0cb53d)
+        ;
+
+        
+    
+    
+            var circle_marker_a6f709ca520d55a86fae4d820fd4bddd = L.circleMarker(
+                [16.604292, 74.403964],
+                {"bubblingMouseEvents": true, "color": "#1E3F66", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2E5B88", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_d300ed8a8153d3d5ce84f6fe128d01f0);
+        
+    
+        var popup_47006b51a653eba9f3541e324fc376eb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_89a9ba6d638388dd39e118808040c7ea = $(`<div id="html_89a9ba6d638388dd39e118808040c7ea" style="width: 100.0%; height: 100.0%;"><b>Sugar Mill:</b> Kallappanna Awade Jawahar Shetkari Sahakari Sakhar Karkhana Ltd.<br><b>District:</b> Kolhapur</div>`)[0];
+                popup_47006b51a653eba9f3541e324fc376eb.setContent(html_89a9ba6d638388dd39e118808040c7ea);
+            
+        
+
+        circle_marker_a6f709ca520d55a86fae4d820fd4bddd.bindPopup(popup_47006b51a653eba9f3541e324fc376eb)
+        ;
+
+        
+    
+    
+            var circle_marker_a97fb176eb33977e2daa9d4b3e307d46 = L.circleMarker(
+                [16.689247, 74.120497],
+                {"bubblingMouseEvents": true, "color": "#1E3F66", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2E5B88", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_d300ed8a8153d3d5ce84f6fe128d01f0);
+        
+    
+        var popup_7205ea5fb60218ed61b29e955ed81d69 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d50ededbe6ca241dded19fcc3eb9ac40 = $(`<div id="html_d50ededbe6ca241dded19fcc3eb9ac40" style="width: 100.0%; height: 100.0%;"><b>Sugar Mill:</b> Kumbhi-Kasari S.S.K. Ltd.<br><b>District:</b> Kolhapur</div>`)[0];
+                popup_7205ea5fb60218ed61b29e955ed81d69.setContent(html_d50ededbe6ca241dded19fcc3eb9ac40);
+            
+        
+
+        circle_marker_a97fb176eb33977e2daa9d4b3e307d46.bindPopup(popup_7205ea5fb60218ed61b29e955ed81d69)
+        ;
+
+        
+    
+    
+            var circle_marker_03956a38eaaca7d13258eabbad46b2c3 = L.circleMarker(
+                [16.281944, 74.246822],
+                {"bubblingMouseEvents": true, "color": "#1E3F66", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2E5B88", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_d300ed8a8153d3d5ce84f6fe128d01f0);
+        
+    
+        var popup_48d3289b2abab961304a937487d24ffa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d7f06c6b6bca624001f33fac1101305b = $(`<div id="html_d7f06c6b6bca624001f33fac1101305b" style="width: 100.0%; height: 100.0%;"><b>Sugar Mill:</b> Sarsenapati Santaji Ghorpade Sugar Factory Ltd.<br><b>District:</b> Kolhapur</div>`)[0];
+                popup_48d3289b2abab961304a937487d24ffa.setContent(html_d7f06c6b6bca624001f33fac1101305b);
+            
+        
+
+        circle_marker_03956a38eaaca7d13258eabbad46b2c3.bindPopup(popup_48d3289b2abab961304a937487d24ffa)
+        ;
+
+        
+    
+    
+            var circle_marker_b3c04177f69f843e320b05b4cf4d0f0e = L.circleMarker(
+                [16.827005, 74.377484],
+                {"bubblingMouseEvents": true, "color": "#1E3F66", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2E5B88", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_d300ed8a8153d3d5ce84f6fe128d01f0);
+        
+    
+        var popup_a34b47fbad7f9cdf0b22e8f4ab53f031 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bc13b50ede50e87e782104d99f073f49 = $(`<div id="html_bc13b50ede50e87e782104d99f073f49" style="width: 100.0%; height: 100.0%;"><b>Sugar Mill:</b> Sharad Sahakari Sakhar Karkhana Ltd.<br><b>District:</b> Kolhapur</div>`)[0];
+                popup_a34b47fbad7f9cdf0b22e8f4ab53f031.setContent(html_bc13b50ede50e87e782104d99f073f49);
+            
+        
+
+        circle_marker_b3c04177f69f843e320b05b4cf4d0f0e.bindPopup(popup_a34b47fbad7f9cdf0b22e8f4ab53f031)
+        ;
+
+        
+    
+    
+            var circle_marker_f0bdece4ea36e7e07ce7f369320f3c1f = L.circleMarker(
+                [16.862392, 74.203336],
+                {"bubblingMouseEvents": true, "color": "#1E3F66", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2E5B88", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_d300ed8a8153d3d5ce84f6fe128d01f0);
+        
+    
+        var popup_c9060241f6cf6fa730d3755435a4c595 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b94c17b6d0eec7e9a7b9a933d54b0210 = $(`<div id="html_b94c17b6d0eec7e9a7b9a933d54b0210" style="width: 100.0%; height: 100.0%;"><b>Sugar Mill:</b> Shri Tatyasaheb Kore Warana S.S.K. Ltd.<br><b>District:</b> Kolhapur</div>`)[0];
+                popup_c9060241f6cf6fa730d3755435a4c595.setContent(html_b94c17b6d0eec7e9a7b9a933d54b0210);
+            
+        
+
+        circle_marker_f0bdece4ea36e7e07ce7f369320f3c1f.bindPopup(popup_c9060241f6cf6fa730d3755435a4c595)
+        ;
+
+        
+    
+    
+            var circle_marker_923519bf58c2c047fe92bf45facb2bdd = L.circleMarker(
+                [17.018117, 74.370544],
+                {"bubblingMouseEvents": true, "color": "#1E3F66", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2E5B88", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_d300ed8a8153d3d5ce84f6fe128d01f0);
+        
+    
+        var popup_12cac43b32b068f1ad3c534dbff97962 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_680f30e162c35c59a432566417fab97e = $(`<div id="html_680f30e162c35c59a432566417fab97e" style="width: 100.0%; height: 100.0%;"><b>Sugar Mill:</b> Padmabhushan Krantiveer Dr. Nagnathanna Nayakawadi Hutatma Kisan Ahir SSK Ltd.<br><b>District:</b> Sangli</div>`)[0];
+                popup_12cac43b32b068f1ad3c534dbff97962.setContent(html_680f30e162c35c59a432566417fab97e);
+            
+        
+
+        circle_marker_923519bf58c2c047fe92bf45facb2bdd.bindPopup(popup_12cac43b32b068f1ad3c534dbff97962)
+        ;
+
+        
+    
+    
+            var circle_marker_29128903a6fab5a55911522ad49c9cdb = L.circleMarker(
+                [16.819907, 74.782411],
+                {"bubblingMouseEvents": true, "color": "#1E3F66", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2E5B88", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_d300ed8a8153d3d5ce84f6fe128d01f0);
+        
+    
+        var popup_2318171d3970a66064a052eb42789a2f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_23d1dda86453e2a3fcd52140ab9281ba = $(`<div id="html_23d1dda86453e2a3fcd52140ab9281ba" style="width: 100.0%; height: 100.0%;"><b>Sugar Mill:</b> Mohanrao Shinde Sahakari Sakhar Karkhana Ltd.<br><b>District:</b> Sangli</div>`)[0];
+                popup_2318171d3970a66064a052eb42789a2f.setContent(html_23d1dda86453e2a3fcd52140ab9281ba);
+            
+        
+
+        circle_marker_29128903a6fab5a55911522ad49c9cdb.bindPopup(popup_2318171d3970a66064a052eb42789a2f)
+        ;
+
+        
+    
+    
+            var circle_marker_313b023d9ff725f67796c68d2dff0dd7 = L.circleMarker(
+                [16.37728, 74.01612],
+                {"bubblingMouseEvents": true, "color": "#1E3F66", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2E5B88", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_d300ed8a8153d3d5ce84f6fe128d01f0);
+        
+    
+        var popup_491e82033bce89e60e6e04509c8402e7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8d4708eea36a2225ff563f09b5b504d6 = $(`<div id="html_8d4708eea36a2225ff563f09b5b504d6" style="width: 100.0%; height: 100.0%;"><b>Sugar Mill:</b> Onkar Sugar & Distillery Power Pvt. Ltd. (Farale Unit-3)<br><b>District:</b> Kolhapur</div>`)[0];
+                popup_491e82033bce89e60e6e04509c8402e7.setContent(html_8d4708eea36a2225ff563f09b5b504d6);
+            
+        
+
+        circle_marker_313b023d9ff725f67796c68d2dff0dd7.bindPopup(popup_491e82033bce89e60e6e04509c8402e7)
+        ;
+
+        
+    
+    
+            var circle_marker_229585c78a8c7caf2927aa562741b97b = L.circleMarker(
+                [16.879546, 74.58935],
+                {"bubblingMouseEvents": true, "color": "#1E3F66", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2E5B88", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_d300ed8a8153d3d5ce84f6fe128d01f0);
+        
+    
+        var popup_e86a16edc1f0680d0203dd3e07f17673 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d37994e778f565f90e6f8dbe91fc3636 = $(`<div id="html_d37994e778f565f90e6f8dbe91fc3636" style="width: 100.0%; height: 100.0%;"><b>Sugar Mill:</b> Shri Dutt India Pvt. Ltd. (Operator of Vasantdada SSK Ltd.)<br><b>District:</b> Sangli</div>`)[0];
+                popup_e86a16edc1f0680d0203dd3e07f17673.setContent(html_d37994e778f565f90e6f8dbe91fc3636);
+            
+        
+
+        circle_marker_229585c78a8c7caf2927aa562741b97b.bindPopup(popup_e86a16edc1f0680d0203dd3e07f17673)
+        ;
+
+        
+    
+    
+            var circle_marker_a2993b40bfbd05ea1402ba00cf82d2fd = L.circleMarker(
+                [15.899837, 74.277891],
+                {"bubblingMouseEvents": true, "color": "#1E3F66", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2E5B88", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_d300ed8a8153d3d5ce84f6fe128d01f0);
+        
+    
+        var popup_761d9ecf21f7fcc4af065d258e174b08 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_740575382fc9c285ddb22c70f15ef174 = $(`<div id="html_740575382fc9c285ddb22c70f15ef174" style="width: 100.0%; height: 100.0%;"><b>Sugar Mill:</b> Atharv Intertrade Pvt. Ltd. (Daulat Sugar Unit)<br><b>District:</b> Kolhapur</div>`)[0];
+                popup_761d9ecf21f7fcc4af065d258e174b08.setContent(html_740575382fc9c285ddb22c70f15ef174);
+            
+        
+
+        circle_marker_a2993b40bfbd05ea1402ba00cf82d2fd.bindPopup(popup_761d9ecf21f7fcc4af065d258e174b08)
+        ;
+
+        
+    
+    
+            var poly_line_262e8c843b6291573ba5b9b2f49bb833 = L.polyline(
+                [[16.689247, 74.120497], [16.7, 74.24]],
+                {"bubblingMouseEvents": true, "color": "#E41A1C", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#E41A1C", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.6142000000000003}
+            ).addTo(map_d300ed8a8153d3d5ce84f6fe128d01f0);
+        
+    
+            poly_line_262e8c843b6291573ba5b9b2f49bb833.bindTooltip(
+                `<div>
+                     
+        <div style='font-family: sans-serif; font-size: 12px; width: 240px;'>
+            <b style='color: #1D4ED8;'>REGIONAL CORRIDOR</b><br>
+            Kumbhi-Kasari S.S.K. Ltd. ➔ Karan Sugars Pvt. Ltd.<br>
+            <hr style='margin: 4px 0;'>
+            <b>1. Allocated Biomass:</b> 4,456.8 MT<br>
+            <b>One-Way Distance:</b> 12.8 km<br>
+            <b>Total Truck Trips:</b> 223<br>
+            <hr style='margin: 4px 0;'>
+            <b style='color: #15803D;'>5-OBJECTIVE IMPACT:</b><br>
+            <b>Cost:</b> ₹ 284,880<br>
+            <b>CO₂ Footprint:</b> 5,094 kg<br>
+            <b>Logistical Work:</b> 56,976 Ton-KM<br>
+            <b>Total Fleet Time:</b> 143 Hrs<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_14c314bbcab4e9e63f5897714772265b = L.polyline(
+                [[16.587863, 74.299359], [16.7, 74.24]],
+                {"bubblingMouseEvents": true, "color": "#E41A1C", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#E41A1C", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3.3904}
+            ).addTo(map_d300ed8a8153d3d5ce84f6fe128d01f0);
+        
+    
+            poly_line_14c314bbcab4e9e63f5897714772265b.bindTooltip(
+                `<div>
+                     
+        <div style='font-family: sans-serif; font-size: 12px; width: 240px;'>
+            <b style='color: #1D4ED8;'>REGIONAL CORRIDOR</b><br>
+            Shree Chhatrapati Shahu S.S.K. Ltd. ➔ Karan Sugars Pvt. Ltd.<br>
+            <hr style='margin: 4px 0;'>
+            <b>1. Allocated Biomass:</b> 7,561.6 MT<br>
+            <b>One-Way Distance:</b> 14.0 km<br>
+            <b>Total Truck Trips:</b> 379<br>
+            <hr style='margin: 4px 0;'>
+            <b style='color: #15803D;'>5-OBJECTIVE IMPACT:</b><br>
+            <b>Cost:</b> ₹ 528,595<br>
+            <b>CO₂ Footprint:</b> 9,467 kg<br>
+            <b>Logistical Work:</b> 105,719 Ton-KM<br>
+            <b>Total Fleet Time:</b> 265 Hrs<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_2f692c7e03aae3b0b05022960e2e5e8c = L.polyline(
+                [[16.535417, 74.113621], [16.7, 74.24]],
+                {"bubblingMouseEvents": true, "color": "#E41A1C", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#E41A1C", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4.2664}
+            ).addTo(map_d300ed8a8153d3d5ce84f6fe128d01f0);
+        
+    
+            poly_line_2f692c7e03aae3b0b05022960e2e5e8c.bindTooltip(
+                `<div>
+                     
+        <div style='font-family: sans-serif; font-size: 12px; width: 240px;'>
+            <b style='color: #1D4ED8;'>REGIONAL CORRIDOR</b><br>
+            Shree Bhogawati Sahakari Sakhar Karkhana Ltd. ➔ Karan Sugars Pvt. Ltd.<br>
+            <hr style='margin: 4px 0;'>
+            <b>1. Allocated Biomass:</b> 11,065.6 MT<br>
+            <b>One-Way Distance:</b> 22.7 km<br>
+            <b>Total Truck Trips:</b> 554<br>
+            <hr style='margin: 4px 0;'>
+            <b style='color: #15803D;'>5-OBJECTIVE IMPACT:</b><br>
+            <b>Cost:</b> ₹ 1,257,110<br>
+            <b>CO₂ Footprint:</b> 22,490 kg<br>
+            <b>Logistical Work:</b> 251,422 Ton-KM<br>
+            <b>Total Fleet Time:</b> 629 Hrs<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_c5ff1965989f2873e0bc938af99c9def = L.polyline(
+                [[16.174812, 73.972563], [16.7, 74.24]],
+                {"bubblingMouseEvents": true, "color": "#E41A1C", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#E41A1C", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3.229}
+            ).addTo(map_d300ed8a8153d3d5ce84f6fe128d01f0);
+        
+    
+            poly_line_c5ff1965989f2873e0bc938af99c9def.bindTooltip(
+                `<div>
+                     
+        <div style='font-family: sans-serif; font-size: 12px; width: 240px;'>
+            <b style='color: #1D4ED8;'>REGIONAL CORRIDOR</b><br>
+            Athani Sugars Ltd. (Bhudargad Unit-4) ➔ Karan Sugars Pvt. Ltd.<br>
+            <hr style='margin: 4px 0;'>
+            <b>1. Allocated Biomass:</b> 6,916.0 MT<br>
+            <b>One-Way Distance:</b> 65.0 km<br>
+            <b>Total Truck Trips:</b> 346<br>
+            <hr style='margin: 4px 0;'>
+            <b style='color: #15803D;'>5-OBJECTIVE IMPACT:</b><br>
+            <b>Cost:</b> ₹ 2,247,398<br>
+            <b>CO₂ Footprint:</b> 40,177 kg<br>
+            <b>Logistical Work:</b> 449,480 Ton-KM<br>
+            <b>Total Fleet Time:</b> 1,124 Hrs<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_b8bbdc2d136ccf7d8f7d63d85a7141ec = L.polyline(
+                [[17.018117, 74.370544], [16.93, 74.42]],
+                {"bubblingMouseEvents": true, "color": "#377EB8", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#377EB8", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3.29032}
+            ).addTo(map_d300ed8a8153d3d5ce84f6fe128d01f0);
+        
+    
+            poly_line_b8bbdc2d136ccf7d8f7d63d85a7141ec.bindTooltip(
+                `<div>
+                     
+        <div style='font-family: sans-serif; font-size: 12px; width: 240px;'>
+            <b style='color: #1D4ED8;'>REGIONAL CORRIDOR</b><br>
+            Padmabhushan Krantiveer Dr. Nagnathanna Nayakawadi Hutatma Kisan Ahir SSK Ltd. ➔ Rajarambapu Patil SSK Ltd.<br>
+            <hr style='margin: 4px 0;'>
+            <b>1. Allocated Biomass:</b> 7,161.3 MT<br>
+            <b>One-Way Distance:</b> 11.1 km<br>
+            <b>Total Truck Trips:</b> 359<br>
+            <hr style='margin: 4px 0;'>
+            <b style='color: #15803D;'>5-OBJECTIVE IMPACT:</b><br>
+            <b>Cost:</b> ₹ 398,190<br>
+            <b>CO₂ Footprint:</b> 7,133 kg<br>
+            <b>Logistical Work:</b> 79,638 Ton-KM<br>
+            <b>Total Fleet Time:</b> 200 Hrs<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_e630c2ecfcced1c3e4a10a423b94f2b8 = L.polyline(
+                [[16.827005, 74.377484], [16.93, 74.42]],
+                {"bubblingMouseEvents": true, "color": "#377EB8", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#377EB8", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3.229}
+            ).addTo(map_d300ed8a8153d3d5ce84f6fe128d01f0);
+        
+    
+            poly_line_e630c2ecfcced1c3e4a10a423b94f2b8.bindTooltip(
+                `<div>
+                     
+        <div style='font-family: sans-serif; font-size: 12px; width: 240px;'>
+            <b style='color: #1D4ED8;'>REGIONAL CORRIDOR</b><br>
+            Sharad Sahakari Sakhar Karkhana Ltd. ➔ Rajarambapu Patil SSK Ltd.<br>
+            <hr style='margin: 4px 0;'>
+            <b>1. Allocated Biomass:</b> 6,916.0 MT<br>
+            <b>One-Way Distance:</b> 12.3 km<br>
+            <b>Total Truck Trips:</b> 346<br>
+            <hr style='margin: 4px 0;'>
+            <b style='color: #15803D;'>5-OBJECTIVE IMPACT:</b><br>
+            <b>Cost:</b> ₹ 425,806<br>
+            <b>CO₂ Footprint:</b> 7,612 kg<br>
+            <b>Logistical Work:</b> 85,161 Ton-KM<br>
+            <b>Total Fleet Time:</b> 213 Hrs<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_fc1544bec67db0c6b1ee74b32548bcf7 = L.polyline(
+                [[16.749613, 74.243609], [16.93, 74.42]],
+                {"bubblingMouseEvents": true, "color": "#377EB8", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#377EB8", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 1.5846}
+            ).addTo(map_d300ed8a8153d3d5ce84f6fe128d01f0);
+        
+    
+            poly_line_fc1544bec67db0c6b1ee74b32548bcf7.bindTooltip(
+                `<div>
+                     
+        <div style='font-family: sans-serif; font-size: 12px; width: 240px;'>
+            <b style='color: #1D4ED8;'>REGIONAL CORRIDOR</b><br>
+            Shri Chhatrapati Rajaram Sahakari Sakhar Karkhana Ltd. ➔ Rajarambapu Patil SSK Ltd.<br>
+            <hr style='margin: 4px 0;'>
+            <b>1. Allocated Biomass:</b> 338.4 MT<br>
+            <b>One-Way Distance:</b> 27.5 km<br>
+            <b>Total Truck Trips:</b> 17<br>
+            <hr style='margin: 4px 0;'>
+            <b style='color: #15803D;'>5-OBJECTIVE IMPACT:</b><br>
+            <b>Cost:</b> ₹ 46,484<br>
+            <b>CO₂ Footprint:</b> 834 kg<br>
+            <b>Logistical Work:</b> 9,297 Ton-KM<br>
+            <b>Total Fleet Time:</b> 23 Hrs<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_a38d80125691db1d9062e732263898c0 = L.polyline(
+                [[16.604292, 74.403964], [16.93, 74.42]],
+                {"bubblingMouseEvents": true, "color": "#377EB8", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#377EB8", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5.3960799999999995}
+            ).addTo(map_d300ed8a8153d3d5ce84f6fe128d01f0);
+        
+    
+            poly_line_a38d80125691db1d9062e732263898c0.bindTooltip(
+                `<div>
+                     
+        <div style='font-family: sans-serif; font-size: 12px; width: 240px;'>
+            <b style='color: #1D4ED8;'>REGIONAL CORRIDOR</b><br>
+            Kallappanna Awade Jawahar Shetkari Sahakari Sakhar Karkhana Ltd. ➔ Rajarambapu Patil SSK Ltd.<br>
+            <hr style='margin: 4px 0;'>
+            <b>1. Allocated Biomass:</b> 15,584.3 MT<br>
+            <b>One-Way Distance:</b> 36.3 km<br>
+            <b>Total Truck Trips:</b> 780<br>
+            <hr style='margin: 4px 0;'>
+            <b style='color: #15803D;'>5-OBJECTIVE IMPACT:</b><br>
+            <b>Cost:</b> ₹ 2,825,227<br>
+            <b>CO₂ Footprint:</b> 50,528 kg<br>
+            <b>Logistical Work:</b> 565,045 Ton-KM<br>
+            <b>Total Fleet Time:</b> 1,414 Hrs<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_ee3bc3808d28ba07e3943544eb4b27bf = L.polyline(
+                [[16.587863, 74.299359], [16.58, 74.31]],
+                {"bubblingMouseEvents": true, "color": "#4DAF4A", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#4DAF4A", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3.0675999999999997}
+            ).addTo(map_d300ed8a8153d3d5ce84f6fe128d01f0);
+        
+    
+            poly_line_ee3bc3808d28ba07e3943544eb4b27bf.bindTooltip(
+                `<div>
+                     
+        <div style='font-family: sans-serif; font-size: 12px; width: 240px;'>
+            <b style='color: #1D4ED8;'>REGIONAL CORRIDOR</b><br>
+            Shree Chhatrapati Shahu S.S.K. Ltd. ➔ Sadashivrao Mandalik Kagal SSK Ltd.<br>
+            <hr style='margin: 4px 0;'>
+            <b>1. Allocated Biomass:</b> 6,270.4 MT<br>
+            <b>One-Way Distance:</b> 1.4 km<br>
+            <b>Total Truck Trips:</b> 314<br>
+            <hr style='margin: 4px 0;'>
+            <b style='color: #15803D;'>5-OBJECTIVE IMPACT:</b><br>
+            <b>Cost:</b> ₹ 44,894<br>
+            <b>CO₂ Footprint:</b> 803 kg<br>
+            <b>Logistical Work:</b> 8,979 Ton-KM<br>
+            <b>Total Fleet Time:</b> 22 Hrs<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_43a688d2f93328acdc1d85d1a7b1329e = L.polyline(
+                [[16.281944, 74.246822], [16.58, 74.31]],
+                {"bubblingMouseEvents": true, "color": "#4DAF4A", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#4DAF4A", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 7.0328}
+            ).addTo(map_d300ed8a8153d3d5ce84f6fe128d01f0);
+        
+    
+            poly_line_43a688d2f93328acdc1d85d1a7b1329e.bindTooltip(
+                `<div>
+                     
+        <div style='font-family: sans-serif; font-size: 12px; width: 240px;'>
+            <b style='color: #1D4ED8;'>REGIONAL CORRIDOR</b><br>
+            Sarsenapati Santaji Ghorpade Sugar Factory Ltd. ➔ Sadashivrao Mandalik Kagal SSK Ltd.<br>
+            <hr style='margin: 4px 0;'>
+            <b>1. Allocated Biomass:</b> 22,131.2 MT<br>
+            <b>One-Way Distance:</b> 33.8 km<br>
+            <b>Total Truck Trips:</b> 1,107<br>
+            <hr style='margin: 4px 0;'>
+            <b style='color: #15803D;'>5-OBJECTIVE IMPACT:</b><br>
+            <b>Cost:</b> ₹ 3,742,424<br>
+            <b>CO₂ Footprint:</b> 66,891 kg<br>
+            <b>Logistical Work:</b> 748,485 Ton-KM<br>
+            <b>Total Fleet Time:</b> 1,872 Hrs<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_a11477b97224af1ec6e6a893dd6d1db2 = L.polyline(
+                [[16.167039, 74.341211], [16.58, 74.31]],
+                {"bubblingMouseEvents": true, "color": "#4DAF4A", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#4DAF4A", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3.229}
+            ).addTo(map_d300ed8a8153d3d5ce84f6fe128d01f0);
+        
+    
+            poly_line_a11477b97224af1ec6e6a893dd6d1db2.bindTooltip(
+                `<div>
+                     
+        <div style='font-family: sans-serif; font-size: 12px; width: 240px;'>
+            <b style='color: #1D4ED8;'>REGIONAL CORRIDOR</b><br>
+            Appasaheb Nalawade Gadhinglaj Taluka SSK Ltd. ➔ Sadashivrao Mandalik Kagal SSK Ltd.<br>
+            <hr style='margin: 4px 0;'>
+            <b>1. Allocated Biomass:</b> 6,916.0 MT<br>
+            <b>One-Way Distance:</b> 46.0 km<br>
+            <b>Total Truck Trips:</b> 346<br>
+            <hr style='margin: 4px 0;'>
+            <b style='color: #15803D;'>5-OBJECTIVE IMPACT:</b><br>
+            <b>Cost:</b> ₹ 1,592,054<br>
+            <b>CO₂ Footprint:</b> 28,461 kg<br>
+            <b>Logistical Work:</b> 318,411 Ton-KM<br>
+            <b>Total Fleet Time:</b> 796 Hrs<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_ce82dde7fa2db1c50908e22f5683ca23 = L.polyline(
+                [[15.899837, 74.277891], [16.58, 74.31]],
+                {"bubblingMouseEvents": true, "color": "#4DAF4A", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#4DAF4A", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3.9206}
+            ).addTo(map_d300ed8a8153d3d5ce84f6fe128d01f0);
+        
+    
+            poly_line_ce82dde7fa2db1c50908e22f5683ca23.bindTooltip(
+                `<div>
+                     
+        <div style='font-family: sans-serif; font-size: 12px; width: 240px;'>
+            <b style='color: #1D4ED8;'>REGIONAL CORRIDOR</b><br>
+            Atharv Intertrade Pvt. Ltd. (Daulat Sugar Unit) ➔ Sadashivrao Mandalik Kagal SSK Ltd.<br>
+            <hr style='margin: 4px 0;'>
+            <b>1. Allocated Biomass:</b> 9,682.4 MT<br>
+            <b>One-Way Distance:</b> 75.7 km<br>
+            <b>Total Truck Trips:</b> 485<br>
+            <hr style='margin: 4px 0;'>
+            <b style='color: #15803D;'>5-OBJECTIVE IMPACT:</b><br>
+            <b>Cost:</b> ₹ 3,665,191<br>
+            <b>CO₂ Footprint:</b> 65,604 kg<br>
+            <b>Logistical Work:</b> 733,038 Ton-KM<br>
+            <b>Total Fleet Time:</b> 1,836 Hrs<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_3f2963e120c3e7e32987840dba9aa3f8 = L.polyline(
+                [[16.620972, 74.594306], [16.73, 74.57]],
+                {"bubblingMouseEvents": true, "color": "#984EA3", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#984EA3", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5.6496}
+            ).addTo(map_d300ed8a8153d3d5ce84f6fe128d01f0);
+        
+    
+            poly_line_3f2963e120c3e7e32987840dba9aa3f8.bindTooltip(
+                `<div>
+                     
+        <div style='font-family: sans-serif; font-size: 12px; width: 240px;'>
+            <b style='color: #1D4ED8;'>REGIONAL CORRIDOR</b><br>
+            Shri Gurudatt Sugars Ltd. ➔ Shree Datta Shetkari SSK Ltd.<br>
+            <hr style='margin: 4px 0;'>
+            <b>1. Allocated Biomass:</b> 16,598.4 MT<br>
+            <b>One-Way Distance:</b> 12.4 km<br>
+            <b>Total Truck Trips:</b> 830<br>
+            <hr style='margin: 4px 0;'>
+            <b style='color: #15803D;'>5-OBJECTIVE IMPACT:</b><br>
+            <b>Cost:</b> ₹ 1,028,830<br>
+            <b>CO₂ Footprint:</b> 18,384 kg<br>
+            <b>Logistical Work:</b> 205,766 Ton-KM<br>
+            <b>Total Fleet Time:</b> 514 Hrs<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_1964daa80013992e768b00eae666e7b8 = L.polyline(
+                [[16.604292, 74.403964], [16.73, 74.57]],
+                {"bubblingMouseEvents": true, "color": "#984EA3", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#984EA3", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5.28072}
+            ).addTo(map_d300ed8a8153d3d5ce84f6fe128d01f0);
+        
+    
+            poly_line_1964daa80013992e768b00eae666e7b8.bindTooltip(
+                `<div>
+                     
+        <div style='font-family: sans-serif; font-size: 12px; width: 240px;'>
+            <b style='color: #1D4ED8;'>REGIONAL CORRIDOR</b><br>
+            Kallappanna Awade Jawahar Shetkari Sahakari Sakhar Karkhana Ltd. ➔ Shree Datta Shetkari SSK Ltd.<br>
+            <hr style='margin: 4px 0;'>
+            <b>1. Allocated Biomass:</b> 15,122.9 MT<br>
+            <b>One-Way Distance:</b> 22.5 km<br>
+            <b>Total Truck Trips:</b> 757<br>
+            <hr style='margin: 4px 0;'>
+            <b style='color: #15803D;'>5-OBJECTIVE IMPACT:</b><br>
+            <b>Cost:</b> ₹ 1,704,608<br>
+            <b>CO₂ Footprint:</b> 30,490 kg<br>
+            <b>Logistical Work:</b> 340,922 Ton-KM<br>
+            <b>Total Fleet Time:</b> 853 Hrs<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_ada05a0344c553be2e539b468d741a9f = L.polyline(
+                [[16.0327, 74.4583], [16.73, 74.57]],
+                {"bubblingMouseEvents": true, "color": "#984EA3", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#984EA3", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4.81968}
+            ).addTo(map_d300ed8a8153d3d5ce84f6fe128d01f0);
+        
+    
+            poly_line_ada05a0344c553be2e539b468d741a9f.bindTooltip(
+                `<div>
+                     
+        <div style='font-family: sans-serif; font-size: 12px; width: 240px;'>
+            <b style='color: #1D4ED8;'>REGIONAL CORRIDOR</b><br>
+            Olam Global Agri Commodities India Pvt. Ltd. (Hemarus) ➔ Shree Datta Shetkari SSK Ltd.<br>
+            <hr style='margin: 4px 0;'>
+            <b>1. Allocated Biomass:</b> 13,278.7 MT<br>
+            <b>One-Way Distance:</b> 78.5 km<br>
+            <b>Total Truck Trips:</b> 664<br>
+            <hr style='margin: 4px 0;'>
+            <b style='color: #15803D;'>5-OBJECTIVE IMPACT:</b><br>
+            <b>Cost:</b> ₹ 5,208,349<br>
+            <b>CO₂ Footprint:</b> 93,065 kg<br>
+            <b>Logistical Work:</b> 1,041,670 Ton-KM<br>
+            <b>Total Fleet Time:</b> 2,604 Hrs<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_80bba311f39789a137ad1336edd3aedb = L.polyline(
+                [[16.862392, 74.203336], [16.9, 74.13]],
+                {"bubblingMouseEvents": true, "color": "#FF7F00", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#FF7F00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5.834}
+            ).addTo(map_d300ed8a8153d3d5ce84f6fe128d01f0);
+        
+    
+            poly_line_80bba311f39789a137ad1336edd3aedb.bindTooltip(
+                `<div>
+                     
+        <div style='font-family: sans-serif; font-size: 12px; width: 240px;'>
+            <b style='color: #1D4ED8;'>REGIONAL CORRIDOR</b><br>
+            Shri Tatyasaheb Kore Warana S.S.K. Ltd. ➔ Shree Tatyasaheb Kore Warana SSK Ltd.<br>
+            <hr style='margin: 4px 0;'>
+            <b>1. Allocated Biomass:</b> 17,336.0 MT<br>
+            <b>One-Way Distance:</b> 8.8 km<br>
+            <b>Total Truck Trips:</b> 867<br>
+            <hr style='margin: 4px 0;'>
+            <b style='color: #15803D;'>5-OBJECTIVE IMPACT:</b><br>
+            <b>Cost:</b> ₹ 767,388<br>
+            <b>CO₂ Footprint:</b> 13,714 kg<br>
+            <b>Logistical Work:</b> 153,478 Ton-KM<br>
+            <b>Total Fleet Time:</b> 384 Hrs<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_5f2993cda033701b7c3171fb25177de4 = L.polyline(
+                [[16.766822, 74.135603], [16.9, 74.13]],
+                {"bubblingMouseEvents": true, "color": "#FF7F00", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#FF7F00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 8.416}
+            ).addTo(map_d300ed8a8153d3d5ce84f6fe128d01f0);
+        
+    
+            poly_line_5f2993cda033701b7c3171fb25177de4.bindTooltip(
+                `<div>
+                     
+        <div style='font-family: sans-serif; font-size: 12px; width: 240px;'>
+            <b style='color: #1D4ED8;'>REGIONAL CORRIDOR</b><br>
+            Shree Datta Sakhar Karkhana / Dalmia Bharat Sugar & Industries Ltd. ➔ Shree Tatyasaheb Kore Warana SSK Ltd.<br>
+            <hr style='margin: 4px 0;'>
+            <b>1. Allocated Biomass:</b> 27,664.0 MT<br>
+            <b>One-Way Distance:</b> 14.8 km<br>
+            <b>Total Truck Trips:</b> 1,384<br>
+            <hr style='margin: 4px 0;'>
+            <b style='color: #15803D;'>5-OBJECTIVE IMPACT:</b><br>
+            <b>Cost:</b> ₹ 2,050,002<br>
+            <b>CO₂ Footprint:</b> 36,648 kg<br>
+            <b>Logistical Work:</b> 410,000 Ton-KM<br>
+            <b>Total Fleet Time:</b> 1,026 Hrs<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_c562a99ac556d93ad53554e9137881e5 = L.polyline(
+                [[16.749613, 74.243609], [16.7, 74.24]],
+                {"bubblingMouseEvents": true, "color": "#A65628", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#A65628", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3.836}
+            ).addTo(map_d300ed8a8153d3d5ce84f6fe128d01f0);
+        
+    
+            poly_line_c562a99ac556d93ad53554e9137881e5.bindTooltip(
+                `<div>
+                     
+        <div style='font-family: sans-serif; font-size: 12px; width: 240px;'>
+            <b style='color: #1D4ED8;'>REGIONAL CORRIDOR</b><br>
+            Shri Chhatrapati Rajaram Sahakari Sakhar Karkhana Ltd. ➔ Shri Chhatrapati Rajaram SSK Ltd.<br>
+            <hr style='margin: 4px 0;'>
+            <b>1. Allocated Biomass:</b> 9,344.0 MT<br>
+            <b>One-Way Distance:</b> 5.5 km<br>
+            <b>Total Truck Trips:</b> 468<br>
+            <hr style='margin: 4px 0;'>
+            <b style='color: #15803D;'>5-OBJECTIVE IMPACT:</b><br>
+            <b>Cost:</b> ₹ 258,366<br>
+            <b>CO₂ Footprint:</b> 4,624 kg<br>
+            <b>Logistical Work:</b> 51,673 Ton-KM<br>
+            <b>Total Fleet Time:</b> 129 Hrs<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_f753afda8d926bfe2c4fc42699be138c = L.polyline(
+                [[16.689247, 74.120497], [16.7, 74.24]],
+                {"bubblingMouseEvents": true, "color": "#A65628", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#A65628", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3.8438000000000003}
+            ).addTo(map_d300ed8a8153d3d5ce84f6fe128d01f0);
+        
+    
+            poly_line_f753afda8d926bfe2c4fc42699be138c.bindTooltip(
+                `<div>
+                     
+        <div style='font-family: sans-serif; font-size: 12px; width: 240px;'>
+            <b style='color: #1D4ED8;'>REGIONAL CORRIDOR</b><br>
+            Kumbhi-Kasari S.S.K. Ltd. ➔ Shri Chhatrapati Rajaram SSK Ltd.<br>
+            <hr style='margin: 4px 0;'>
+            <b>1. Allocated Biomass:</b> 9,375.2 MT<br>
+            <b>One-Way Distance:</b> 12.8 km<br>
+            <b>Total Truck Trips:</b> 469<br>
+            <hr style='margin: 4px 0;'>
+            <b style='color: #15803D;'>5-OBJECTIVE IMPACT:</b><br>
+            <b>Cost:</b> ₹ 599,266<br>
+            <b>CO₂ Footprint:</b> 10,712 kg<br>
+            <b>Logistical Work:</b> 119,853 Ton-KM<br>
+            <b>Total Fleet Time:</b> 300 Hrs<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_cdf31109e49e46d7da1ac0245eaf2501 = L.polyline(
+                [[16.42629, 74.141511], [16.7, 74.24]],
+                {"bubblingMouseEvents": true, "color": "#A65628", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#A65628", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4.6122}
+            ).addTo(map_d300ed8a8153d3d5ce84f6fe128d01f0);
+        
+    
+            poly_line_cdf31109e49e46d7da1ac0245eaf2501.bindTooltip(
+                `<div>
+                     
+        <div style='font-family: sans-serif; font-size: 12px; width: 240px;'>
+            <b style='color: #1D4ED8;'>REGIONAL CORRIDOR</b><br>
+            Shree Dudhganga Vedganga S.S.K. Ltd. ➔ Shri Chhatrapati Rajaram SSK Ltd.<br>
+            <hr style='margin: 4px 0;'>
+            <b>1. Allocated Biomass:</b> 12,448.8 MT<br>
+            <b>One-Way Distance:</b> 32.2 km<br>
+            <b>Total Truck Trips:</b> 623<br>
+            <hr style='margin: 4px 0;'>
+            <b style='color: #15803D;'>5-OBJECTIVE IMPACT:</b><br>
+            <b>Cost:</b> ₹ 2,003,916<br>
+            <b>CO₂ Footprint:</b> 35,836 kg<br>
+            <b>Logistical Work:</b> 400,783 Ton-KM<br>
+            <b>Total Fleet Time:</b> 1,003 Hrs<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_6347277383ddd63af2d7006d6d07514e = L.polyline(
+                [[16.37728, 74.01612], [16.7, 74.24]],
+                {"bubblingMouseEvents": true, "color": "#A65628", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#A65628", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3.229}
+            ).addTo(map_d300ed8a8153d3d5ce84f6fe128d01f0);
+        
+    
+            poly_line_6347277383ddd63af2d7006d6d07514e.bindTooltip(
+                `<div>
+                     
+        <div style='font-family: sans-serif; font-size: 12px; width: 240px;'>
+            <b style='color: #1D4ED8;'>REGIONAL CORRIDOR</b><br>
+            Onkar Sugar & Distillery Power Pvt. Ltd. (Farale Unit-3) ➔ Shri Chhatrapati Rajaram SSK Ltd.<br>
+            <hr style='margin: 4px 0;'>
+            <b>1. Allocated Biomass:</b> 6,916.0 MT<br>
+            <b>One-Way Distance:</b> 43.1 km<br>
+            <b>Total Truck Trips:</b> 346<br>
+            <hr style='margin: 4px 0;'>
+            <b style='color: #15803D;'>5-OBJECTIVE IMPACT:</b><br>
+            <b>Cost:</b> ₹ 1,490,245<br>
+            <b>CO₂ Footprint:</b> 26,641 kg<br>
+            <b>Logistical Work:</b> 298,049 Ton-KM<br>
+            <b>Total Fleet Time:</b> 746 Hrs<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_7c1b22fe8c1d3fe3db746cae240b7160 = L.polyline(
+                [[16.101127, 74.124312], [16.7, 74.24]],
+                {"bubblingMouseEvents": true, "color": "#A65628", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#A65628", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3.229}
+            ).addTo(map_d300ed8a8153d3d5ce84f6fe128d01f0);
+        
+    
+            poly_line_7c1b22fe8c1d3fe3db746cae240b7160.bindTooltip(
+                `<div>
+                     
+        <div style='font-family: sans-serif; font-size: 12px; width: 240px;'>
+            <b style='color: #1D4ED8;'>REGIONAL CORRIDOR</b><br>
+            Ajara Shetkari Sahakari Sakhar Karkhana Ltd. ➔ Shri Chhatrapati Rajaram SSK Ltd.<br>
+            <hr style='margin: 4px 0;'>
+            <b>1. Allocated Biomass:</b> 6,916.0 MT<br>
+            <b>One-Way Distance:</b> 67.7 km<br>
+            <b>Total Truck Trips:</b> 346<br>
+            <hr style='margin: 4px 0;'>
+            <b style='color: #15803D;'>5-OBJECTIVE IMPACT:</b><br>
+            <b>Cost:</b> ₹ 2,341,945<br>
+            <b>CO₂ Footprint:</b> 41,867 kg<br>
+            <b>Logistical Work:</b> 468,389 Ton-KM<br>
+            <b>Total Fleet Time:</b> 1,172 Hrs<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_cc9ce0a8907dc5d75e7558d1ca3aca2b = L.polyline(
+                [[16.879546, 74.58935], [16.85, 74.58]],
+                {"bubblingMouseEvents": true, "color": "#F781BF", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#F781BF", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 6.687}
+            ).addTo(map_d300ed8a8153d3d5ce84f6fe128d01f0);
+        
+    
+            poly_line_cc9ce0a8907dc5d75e7558d1ca3aca2b.bindTooltip(
+                `<div>
+                     
+        <div style='font-family: sans-serif; font-size: 12px; width: 240px;'>
+            <b style='color: #1D4ED8;'>REGIONAL CORRIDOR</b><br>
+            Shri Dutt India Pvt. Ltd. (Operator of Vasantdada SSK Ltd.) ➔ Vasantdada SSK Ltd.<br>
+            <hr style='margin: 4px 0;'>
+            <b>1. Allocated Biomass:</b> 20,748.0 MT<br>
+            <b>One-Way Distance:</b> 3.4 km<br>
+            <b>Total Truck Trips:</b> 1,038<br>
+            <hr style='margin: 4px 0;'>
+            <b style='color: #15803D;'>5-OBJECTIVE IMPACT:</b><br>
+            <b>Cost:</b> ₹ 356,110<br>
+            <b>CO₂ Footprint:</b> 6,366 kg<br>
+            <b>Logistical Work:</b> 71,222 Ton-KM<br>
+            <b>Total Fleet Time:</b> 178 Hrs<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_bf3915b9a77fc84f4d861d6c255a19c5 = L.polyline(
+                [[16.751179, 74.588812], [16.85, 74.58]],
+                {"bubblingMouseEvents": true, "color": "#F781BF", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#F781BF", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 6.3412}
+            ).addTo(map_d300ed8a8153d3d5ce84f6fe128d01f0);
+        
+    
+            poly_line_bf3915b9a77fc84f4d861d6c255a19c5.bindTooltip(
+                `<div>
+                     
+        <div style='font-family: sans-serif; font-size: 12px; width: 240px;'>
+            <b style='color: #1D4ED8;'>REGIONAL CORRIDOR</b><br>
+            Shree Datta Shetkari S.S.K. Ltd. ➔ Vasantdada SSK Ltd.<br>
+            <hr style='margin: 4px 0;'>
+            <b>1. Allocated Biomass:</b> 19,364.8 MT<br>
+            <b>One-Way Distance:</b> 11.0 km<br>
+            <b>Total Truck Trips:</b> 969<br>
+            <hr style='margin: 4px 0;'>
+            <b style='color: #15803D;'>5-OBJECTIVE IMPACT:</b><br>
+            <b>Cost:</b> ₹ 1,067,810<br>
+            <b>CO₂ Footprint:</b> 19,093 kg<br>
+            <b>Logistical Work:</b> 213,562 Ton-KM<br>
+            <b>Total Fleet Time:</b> 534 Hrs<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_53fbc70a985f61178aec70b1afbccb66 = L.polyline(
+                [[16.71292, 74.44332], [16.85, 74.58]],
+                {"bubblingMouseEvents": true, "color": "#F781BF", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#F781BF", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4.958}
+            ).addTo(map_d300ed8a8153d3d5ce84f6fe128d01f0);
+        
+    
+            poly_line_53fbc70a985f61178aec70b1afbccb66.bindTooltip(
+                `<div>
+                     
+        <div style='font-family: sans-serif; font-size: 12px; width: 240px;'>
+            <b style='color: #1D4ED8;'>REGIONAL CORRIDOR</b><br>
+            Deshbhakta Ratnappa Kumbhar Panchganga S.S.K. Ltd. ➔ Vasantdada SSK Ltd.<br>
+            <hr style='margin: 4px 0;'>
+            <b>1. Allocated Biomass:</b> 13,832.0 MT<br>
+            <b>One-Way Distance:</b> 21.1 km<br>
+            <b>Total Truck Trips:</b> 692<br>
+            <hr style='margin: 4px 0;'>
+            <b style='color: #15803D;'>5-OBJECTIVE IMPACT:</b><br>
+            <b>Cost:</b> ₹ 1,457,398<br>
+            <b>CO₂ Footprint:</b> 26,054 kg<br>
+            <b>Logistical Work:</b> 291,480 Ton-KM<br>
+            <b>Total Fleet Time:</b> 729 Hrs<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_1922289a561bd9efa8224641b73651a1 = L.polyline(
+                [[16.819907, 74.782411], [16.85, 74.58]],
+                {"bubblingMouseEvents": true, "color": "#F781BF", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#F781BF", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4.2664}
+            ).addTo(map_d300ed8a8153d3d5ce84f6fe128d01f0);
+        
+    
+            poly_line_1922289a561bd9efa8224641b73651a1.bindTooltip(
+                `<div>
+                     
+        <div style='font-family: sans-serif; font-size: 12px; width: 240px;'>
+            <b style='color: #1D4ED8;'>REGIONAL CORRIDOR</b><br>
+            Mohanrao Shinde Sahakari Sakhar Karkhana Ltd. ➔ Vasantdada SSK Ltd.<br>
+            <hr style='margin: 4px 0;'>
+            <b>1. Allocated Biomass:</b> 11,065.6 MT<br>
+            <b>One-Way Distance:</b> 21.8 km<br>
+            <b>Total Truck Trips:</b> 554<br>
+            <hr style='margin: 4px 0;'>
+            <b style='color: #15803D;'>5-OBJECTIVE IMPACT:</b><br>
+            <b>Cost:</b> ₹ 1,206,196<br>
+            <b>CO₂ Footprint:</b> 21,579 kg<br>
+            <b>Logistical Work:</b> 241,239 Ton-KM<br>
+            <b>Total Fleet Time:</b> 604 Hrs<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_24972a46f38c8ca75eace349ce9a89e2 = L.polyline(
+                [[16.604292, 74.403964], [16.85, 74.58]],
+                {"bubblingMouseEvents": true, "color": "#F781BF", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#F781BF", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.1224}
+            ).addTo(map_d300ed8a8153d3d5ce84f6fe128d01f0);
+        
+    
+            poly_line_24972a46f38c8ca75eace349ce9a89e2.bindTooltip(
+                `<div>
+                     
+        <div style='font-family: sans-serif; font-size: 12px; width: 240px;'>
+            <b style='color: #1D4ED8;'>REGIONAL CORRIDOR</b><br>
+            Kallappanna Awade Jawahar Shetkari Sahakari Sakhar Karkhana Ltd. ➔ Vasantdada SSK Ltd.<br>
+            <hr style='margin: 4px 0;'>
+            <b>1. Allocated Biomass:</b> 2,489.6 MT<br>
+            <b>One-Way Distance:</b> 33.1 km<br>
+            <b>Total Truck Trips:</b> 125<br>
+            <hr style='margin: 4px 0;'>
+            <b style='color: #15803D;'>5-OBJECTIVE IMPACT:</b><br>
+            <b>Cost:</b> ₹ 412,455<br>
+            <b>CO₂ Footprint:</b> 7,400 kg<br>
+            <b>Logistical Work:</b> 82,491 Ton-KM<br>
+            <b>Total Fleet Time:</b> 207 Hrs<br>
+        </div>
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
